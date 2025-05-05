@@ -8,7 +8,13 @@
     
     <!-- load stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+=======
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -71,6 +77,7 @@
             max-height: 400px;
             overflow-y: auto;
         }
+<<<<<<< HEAD
 
         /* Styles pour la validation */
         .form-control.is-invalid {
@@ -96,6 +103,8 @@
             from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
         }
+=======
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
     </style>
 </head>
 
@@ -107,7 +116,11 @@
                 <div class="row">
                     <nav class="navbar navbar-expand-lg narbar-light">
                         <a class="navbar-brand mr-auto" href="#">
+<<<<<<< HEAD
                             <i class="fas fa-home"></i>
+=======
+                            <img src="img/logo.png" alt="Site logo">
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
                             WeRent
                         </a>
                         <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -197,6 +210,7 @@
                             <input type="hidden" name="action" value="addReclamation">
                             <div class="mb-3">
                                 <label for="description" class="form-label">Description</label>
+<<<<<<< HEAD
                                 <textarea class="form-control" id="description" name="description" required rows="3"
                                     placeholder="Décrivez votre réclamation (le texte sera vérifié pour les mots inappropriés)"></textarea>
                                 <div class="invalid-feedback">
@@ -206,6 +220,11 @@
                             <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-paper-plane"></i> Soumettre
                             </button>
+=======
+                                <textarea class="form-control" id="description" name="description" required rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Soumettre</button>
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
                         </form>
                     </div>
                 </div>
@@ -287,12 +306,21 @@
         </footer>
     </div>
 
+<<<<<<< HEAD
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         $(document).ready(function(){
+=======
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function(){
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
             // Gestion de la barre de navigation fixe
             $(window).on("scroll", function() {
                 if($(window).scrollTop() > 100) {
@@ -355,6 +383,7 @@
                     console.error('Erreur:', error);
                 });
         }
+<<<<<<< HEAD
 
         // Fonction pour vérifier les bad words
         async function checkProfanity(text) {
@@ -448,6 +477,8 @@
                 });
             }
         });
+=======
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
     </script>
 </body>
 </html>

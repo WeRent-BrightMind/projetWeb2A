@@ -9,7 +9,11 @@ class config
         $servername = 'localhost';
         $username = 'root';
         $password = '';
-        $dbname = 'sourour';
+ HEAD
+        $dbname = 'werent';
+
+        $dbname = 'werent';
+4864be3ae163223f95b6db6290a654f10e05cb91
 
         // Use a singleton pattern to ensure only one database connection is used
         if (self::$pdo === null) {

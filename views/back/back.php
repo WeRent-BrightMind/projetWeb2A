@@ -7,7 +7,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+=======
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
     <title>Réclamations Management</title>
     <style>
         .recent-orders {
@@ -327,6 +330,7 @@
             border-radius: 1rem;
             font-size: 0.8rem;
         }
+<<<<<<< HEAD
 
         .btn-stats, .btn-export, .btn-sort {
             background: var(--color-primary);
@@ -479,6 +483,8 @@
             color: var(--color-dark-variant);
             font-style: italic;
         }
+=======
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
     </style>
 </head>
 
@@ -562,6 +568,7 @@
         <main>
             <div class="page-header">
                 <h1>Gestion des Réclamations</h1>
+<<<<<<< HEAD
                 <div class="header-actions">
                     <div class="sort-buttons">
                         <button class="btn-sort" id="sortAsc" onclick="sortComplaints('asc')" title="Trier par date (plus ancien au plus récent)">
@@ -583,6 +590,11 @@
                         <span class="material-icons-sharp">calendar_today</span>
                         <span id="current-date"></span>
                     </div>
+=======
+                <div class="date">
+                    <span class="material-icons-sharp">calendar_today</span>
+                    <span id="current-date"></span>
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
                 </div>
             </div>
             
@@ -617,6 +629,7 @@
             ?>
 
             <div class="recent-orders">
+<<<<<<< HEAD
                 <div class="search-container">
                     <span class="material-icons-sharp search-icon">search</span>
                     <input type="text" 
@@ -625,6 +638,8 @@
                            placeholder="Rechercher dans les descriptions..."
                            oninput="handleSearch(this.value)">
                 </div>
+=======
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
                 <table>
                     <thead>
                         <tr>
@@ -635,7 +650,11 @@
                             <th class="action-cell">Actions</th>
                         </tr>
                     </thead>
+<<<<<<< HEAD
                     <tbody id="complaintsTableBody">
+=======
+                    <tbody>
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
                         <?php 
                         $reclamations = $reclamationController->getReclamations();
                         foreach ($reclamations as $reclamation): 
@@ -692,6 +711,7 @@
                         <?php endforeach; ?>
                     </tbody>
                 </table>
+<<<<<<< HEAD
                 <div class="pagination">
                     <div class="pagination-buttons">
                         <button class="page-btn" id="prevPage" onclick="changePage(-1)" disabled>
@@ -707,6 +727,8 @@
                         Page <span id="currentPage">1</span> sur <span id="totalPages">1</span>
                     </div>
                 </div>
+=======
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
             </div>
         </main>
         <!-- End of Main Content -->
@@ -728,6 +750,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <!-- Modal for Statistics -->
     <div id="statsModal" class="stats-modal">
         <div class="stats-modal-content">
@@ -739,6 +762,8 @@
         </div>
     </div>
 
+=======
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
     <script>
         // Mise à jour du compteur de réclamations
         document.addEventListener('DOMContentLoaded', function() {
@@ -900,6 +925,7 @@
             if (responsesSection.classList.contains('active')) {
                 loadResponses(reclamationId);
             }
+<<<<<<< HEAD
             
             // Update pagination to ensure proper display of expanded/collapsed rows
             updatePagination();
@@ -975,10 +1001,16 @@
         }
 
         // Close modals when clicking outside
+=======
+        }
+
+        // Close modal when clicking outside
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
         window.onclick = function(event) {
             if (event.target == responseModal) {
                 closeResponseModal();
             }
+<<<<<<< HEAD
             if (event.target == statsModal) {
                 closeStatsModal();
             }
@@ -1235,6 +1267,9 @@
             
             // ... existing DOMContentLoaded code ...
         });
+=======
+        }
+>>>>>>> 4864be3ae163223f95b6db6290a654f10e05cb91
     </script>
 </body>
 </html>
