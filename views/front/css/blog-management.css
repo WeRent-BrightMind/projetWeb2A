@@ -1,0 +1,97 @@
+/* Blog Management Styles */
+.tm-page-wrap {
+    padding: 20px 0;
+}
+
+.table-responsive {
+    margin: 20px 0;
+}
+
+.table th {
+    font-weight: 600;
+}
+
+.badge {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-secondary {
+    background-color: #6c757d;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    margin-right: 5px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.page-link {
+    color: #007bff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-header h5 {
+    margin: 0;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+}
+
+.comments-section {
+    display: none;
+}
+
+.comments-section h6 {
+    margin-bottom: 10px;
+}
+
+.comments-section ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.comments-section li {
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-right {
+        text-align: left !important;
+        margin-top: 10px;
+    }
+    
+    .btn-sm {
+        margin-bottom: 5px;
+    }
+}
